@@ -1,8 +1,15 @@
+import HeroSection from '@/view/HeroSection.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [],
+  routes: [
+    {
+      path: '/',
+      name: 'HeroSection',
+      component: HeroSection
+    }
+  ],
 })
 
 export default router
